@@ -11,7 +11,7 @@ connectDatabase()
 
 const app = express()
 app.use(cors({
-  origin: 'http://localhost:3000', 
+  origin: 'https://hasta-randevu.netlify.app', 
   methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'], 
   allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'], 
   credentials: true, 
