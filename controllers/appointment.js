@@ -1,6 +1,7 @@
 const Appointment = require("../models/Appointment");
 
 const createAppointment = async (req, res, next) => {
+    
     try {
         const {doctorId, date} = (req.body);
         const appointment = await Appointment.create({
@@ -32,6 +33,7 @@ const createAppointment = async (req, res, next) => {
     }
   };
   const getAppointments = async (req, res, next) => {
+      console.log("deneme");
     try {
         console.log("deneme");
         const patientId = req.user.id;
