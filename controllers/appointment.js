@@ -33,6 +33,7 @@ const createAppointment = async (req, res, next) => {
   };
   const getAppointments = async (req, res, next) => {
     try {
+        console.log("deneme");
         const patientId = req.user.id;
         const currentDate = new Date();
 
